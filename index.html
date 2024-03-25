@@ -3,17 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de Página Web</title>
+    <title>Portafolio de Cristian Ruiz</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Mi Página Web</h1>
+        <div class="container">
+            <h1>Portafolio de Cristian Ruiz</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <p>Bienvenido a mi página web. Aquí puedes encontrar información interesante.</p>
-        <button id="colorButton">Cambia de Color</button>
-    </main>
+
+    <section id="about">
+        <div class="container">
+            <h2>Sobre mí</h2>
+            <p>Soy un apasionado aprendiz de programación web con habilidades en HTML, CSS, JavaScript y Python. Actualmente, busco oportunidades para desarrollarme como programador profesional.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Proyectos</h2>
+            <div class="project">
+                <h3>Proyecto 1</h3>
+                <img src="project1.jpg" alt="Proyecto 1">
+                <p>Descripción del proyecto 1</p>
+            </div>
+            <div class="project">
+                <h3>Proyecto 2</h3>
+                <img src="project2.jpg" alt="Proyecto 2">
+                <p>Descripción del proyecto 2</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <textarea placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Derechos de autor &copy; 2024 Portafolio de Cristian Ruiz</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
