@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST["message"];
     
     // Correo para enviar el formulario
-    $to = "tudirecciondecorreo@example.com";
+    $to = "xcrcx@live.com.mx";
     $subject = "Nuevo mensaje de contacto de $name";
     $body = "Has recibido un nuevo mensaje de contacto:\n\nNombre: $name\nCorreo electrónico: $email\nMensaje: $message";
     $headers = "From: $email";
@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Correo automático al remitente
     $auto_subject = "Gracias por contactarme";
     $auto_body = "Hola $name,\n\nGracias por contactarme. He recibido tu mensaje y me pondré en contacto contigo lo antes posible.\n\nSaludos,\nCristian Ruiz";
-    $auto_headers = "From: tudirecciondecorreo@example.com";
+    $auto_headers = "From: xcrcx@live.com.mx";
 
     // Enviar el correo automático
     mail($email, $auto_subject, $auto_body, $auto_headers);
