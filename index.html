@@ -21,48 +21,13 @@
         </div>
     </header>
 
-    <section id="about">
-        <div class="container">
-            <h2>Sobre mí</h2>
-            <p>Soy un apasionado aprendiz de programación web con habilidades en HTML, CSS, JavaScript y Python. Actualmente, busco oportunidades para desarrollarme como programador profesional.</p>
-        </div>
-    </section>
-
-    <section id="skills">
-        <div class="container">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="container">
-            <h2>Proyectos</h2>
-            <div class="project">
-                <h3>Proyecto 1</h3>
-                <img src="project1.jpg" alt="Proyecto 1">
-                <p>Descripción del proyecto 1</p>
-            </div>
-            <div class="project">
-                <h3>Proyecto 2</h3>
-                <img src="project2.jpg" alt="Proyecto 2">
-                <p>Descripción del proyecto 2</p>
-            </div>
-        </div>
-    </section>
-
     <section id="contact">
         <div class="container">
             <h2>Contacto</h2>
-            <form id="contact-form">
-                <input type="text" placeholder="Nombre" required>
-                <input type="email" placeholder="Correo electrónico" required>
-                <textarea placeholder="Mensaje" required></textarea>
+            <form id="contact-form" action="contact.php" method="post">
+                <input type="text" name="name" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <textarea name="message" placeholder="Mensaje" required></textarea>
                 <button type="submit">Enviar mensaje</button>
             </form>
         </div>
@@ -73,7 +38,5 @@
             <p>Derechos de autor &copy; 2024 Portafolio de Cristian Ruiz</p>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
