@@ -18,6 +18,14 @@ header {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+    position: relative;
+}
+
+.header-image {
+    max-width: 100%; /* Ancho máximo igual al ancho del header */
+    height: auto; /* Altura automática para mantener la proporción de la imagen */
+    border: 10px solid #fff; /* Borde de 10px blanco */
+    border-radius: 10px; /* Bordes redondeados */
 }
 
 header h1 {
