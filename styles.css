@@ -22,7 +22,7 @@ header {
 }
 
 .header-image {
-    max-width: 100%; /* Ancho máximo igual al ancho del header */
+    max-width: 25%; /* Ancho máximo igual al ancho del header */
     height: auto; /* Altura automática para mantener la proporción de la imagen */
     border: 10px solid #fff; /* Borde de 10px blanco */
     border-radius: 10px; /* Bordes redondeados */
