@@ -7,69 +7,67 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Portafolio de Cristian Ruiz</h1>
-            <img src="código-datos-argentina-banner-1-2.webp" alt="Banner de Código" class="header-image">
-            <nav>
-                <ul>
-                    <li><a href="#about">Sobre mí</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="#projects">Proyectos</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-<section id="about">
-        <div class="container">
-            <h2>Sobre mí</h2>
-            <p>Soy un apasionado aprendiz de programación web con habilidades en HTML, CSS, JavaScript y Python. Actualmente, busco oportunidades para desarrollarme como programador profesional.</p>
-        </div>
-    </section>
-
-    <section id="skills">
-        <div class="container">
-            <h2>Habilidades</h2>
+<header>
+    <div class="container">
+        <h1>Portafolio de Cristian Ruiz</h1>
+        <nav>
             <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
+                <li data-section="about"><a href="#">Sobre mí</a></li>
+                <li data-section="skills"><a href="#">Habilidades</a></li>
+                <li data-section="projects"><a href="#">Proyectos</a></li>
+                <li data-section="contact"><a href="#">Contacto</a></li>
             </ul>
-        </div>
-    </section>
+        </nav>
+    </div>
+</header>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Proyectos</h2>
-            <div class="project">
-                <h3>Proyecto 1</h3>
-                <p>Descripción del proyecto 1</p>
-            </div>
-            <div class="project">
-                <h3>Proyecto 2</h3>
-                <p>Descripción del proyecto 2</p>
-            </div>
-        </div>
-    </section>
+<section id="about" class="hidden">
+    <div class="container">
+        <h2>Sobre mí</h2>
+        <p>Soy un apasionado aprendiz de programación web con habilidades en HTML, CSS, JavaScript y Python. Actualmente, busco oportunidades para desarrollarme como programador profesional.</p>
+    </div>
+</section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contacto</h2>
-            <form id="contact-form" action="contact.php" method="post">
-                <input type="text" name="name" placeholder="Nombre" required>
-                <input type="email" name="email" placeholder="Correo electrónico" required>
-                <textarea name="message" placeholder="Mensaje" required></textarea>
-                <button type="submit">Enviar mensaje</button>
-            </form>
-        </div>
-    </section>
+<section id="skills" class="hidden">
+    <div class="container">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+        </ul>
+    </div>
+</section>
 
-    <footer>
-        <div class="container">
-            <p>Derechos de autor &copy; 2024 Portafolio de Cristian Ruiz</p>
+<section id="projects" class="hidden">
+    <div class="container">
+        <h2>Proyectos</h2>
+        <div class="project">
+            <h3>Proyecto 1</h3>
+            <p>Descripción del proyecto 1</p>
         </div>
-    </footer>
-</body>
-</html>
+        <div class="project">
+            <h3>Proyecto 2</h3>
+            <p>Descripción del proyecto 2</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="hidden">
+    <div class="container">
+        <h2>Contacto</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <textarea placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar mensaje</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>Derechos de autor &copy; 2024 Portafolio de Cristian Ruiz</p>
+    </div>
+</footer>
