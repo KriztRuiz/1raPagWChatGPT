@@ -1,6 +1,17 @@
-/*document.getElementById('colorButton').addEventListener('click', function() {
-    var button = document.getElementById('colorButton');
-    var randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
-    button.style.backgroundColor = randomColor;
+document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("nav ul li");
+
+    navLinks.forEach(function(link) {
+        link.addEventListener("click", function() {
+            const sectionId = link.getAttribute("data-section");
+            sections.forEach(function(section) {
+                if (section.id === sectionId) {
+                    section.classList.remove("hidden");
+                } else {
+                    section.classList.add("hidden");
+                }
+            });
+        });
+    });
 });
-*/
