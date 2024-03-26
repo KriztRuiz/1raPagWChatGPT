@@ -60,7 +60,7 @@ section {
     display: none;
 }
 
-/* Estilos de las secciones 
+/* Estilos de las secciones */ 
 #about {
     padding: 50px 0;
     background-color: #1B4F72;
@@ -84,7 +84,6 @@ section {
     background-color: #85C1E9;
     color: #fff;
 }
-*/
 
 /* Estilos de los proyectos */
 .project {
