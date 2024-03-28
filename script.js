@@ -14,4 +14,16 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
     });
+
+    
+    const contactButtons = document.querySelectorAll(".contact-button");
+
+    contactButtons.forEach(function(button) {
+        button.addEventListener("click", function() {
+            const buttonText = button.querySelector("span").textContent;
+            alert("Has hecho clic en el botón de " + buttonText);
+        });
+    });
+
+
 });
