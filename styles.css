@@ -138,6 +138,7 @@ footer {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en líneas */
 }
 
 .contact-button {
@@ -167,10 +168,9 @@ footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Ajustes de tamaño responsivo */
 @media (max-width: 768px) {
-    .contact-button {
-        padding: 8px 16px;
-        margin: 0 5px;
+    .contact-buttons {
+        flex-direction: column; /* Cambia la dirección de los elementos a vertical */
+        align-items: center; /* Centra los elementos horizontalmente */
     }
 }
