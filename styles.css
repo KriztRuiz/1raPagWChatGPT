@@ -95,6 +95,45 @@ section {
     height: auto;
 }
 
+/* Estilos para centrar el contenedor de habilidades */
+#skills .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#skills ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#skills ul li {
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+#skills .course-links {
+    display: none;
+    margin-top: 20px;
+}
+
+#skills .course-links a {
+    display: block;
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+#skills .active {
+    transform: translateX(-50%);
+}
+
+#skills .show-links .course-links {
+    display: block;
+}
+
 /* Estilos del formulario de contacto */
 form {
     max-width: 500px;
